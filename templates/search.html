@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block metadescription %}
+    {{product.desc |truncatewords:150}}
+{% endblock %}
+{% block title %}
+    {{product.name}}-Shopping Cart
+{% endblock %}
+{% block content %}
+<div>
+<p class="text-center my_search_text">You have searched for {{query}}</p>
+</div>
+<div class="container">
+    <div class="row max-auto">
+        {% for product in products %}
+        <div class="my_bottom_margin col-09 col-sm-12 col-md-4 col-lg-4">
+            <div class="card text-center" style="width: 18rem;">
+                <a href="{{product.get_url}}"><img class="car-img-top my_img" src="{{product.img.url}}" width="200" height="200" alt="{{product.name}}"> </a>
+                <div class="card-body">
+                    <h4>{{product.name}}</h4>
+                    <h4>₹{{product.price}}</h4>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="row mx-auto">
+            <p class="text-center my_search_text">ZERO reults found</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

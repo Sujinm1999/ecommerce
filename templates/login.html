@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div class='bold-line'></div>
+<div class='container'>
+  <div class='window'>
+    <div class='overlay'></div>
+    <div class='content'>
+      <div class='welcome'>Hello There!</div>
+      <div class='subtitle'>Create an account if you are new here.</div>
+        <form method="post">
+            {% csrf_token %}
+      <div class='input-fields'>
+        <input type='text' placeholder='Username' class='input-line full-width' name="username">
+        <input type='password' placeholder='Password' class='input-line full-width' name="password">
+
+      </div>
+            <div><input type="submit" class='ghost-round full-width' value="LOGIN"></div>
+            </form>
+
+        <div class='spacing'><a href="register/r">or create account here</a></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

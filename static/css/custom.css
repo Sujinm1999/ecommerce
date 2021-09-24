@@ -1,0 +1,119 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+/****navbar****/
+.nav-item{
+    letter-spacing:.2em;
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.dropdown-item{
+    letter-spacing:.2em;
+    font-size:20px;
+    text-transfor: uppercase;
+}
+/****footer****/
+.my_footer{
+    color:red;
+    height:40px;
+}
+
+.my_footer p{
+    padding-top:20px;
+    font-size:25px;
+}
+/****category****/
+
+.my_row_class{
+    padding-top:15px;
+}
+
+.my_row_class .mx-auto p a{
+    color:black;
+    font-size:18px;
+    text-decoration:none;
+}
+
+.my_img{
+    width:100%;
+    height:auto;
+}
+
+.my_imgs{
+    width:100px;
+    height:300px;
+}
+
+.my_title{
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+}
+
+.card-body h4{
+    font-size:23px;
+    text-tansform: uppercase;
+    letter-spacing:.2e;
+}
+
+.my_bottom_margin{
+    margin-bottom:10px;
+}
+
+/****Product****/
+
+.my_prod_row_class{
+    padding-top:15px;
+    padding-bottom:20px;
+}
+
+.my_prod_row_class .mx-auto{
+    color:black;
+    font-size:12px;
+}
+
+.my_prod_row_class .mx-auto p a{
+    color:black;
+    font-size:12px;
+    text-decoration:none;
+}
+
+.my_prod_title{
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    padding-top:15px;
+    padding-bottom:10px;
+}
+.my_search_text{
+    padding:20px;
+}
+
+.my_custom_table{
+    min-width:400px;
+    font-size:14px;
+}
+
+.my_custom_thead{
+    width:100px;
+    height:100px;
+}
+
+.custom_a{
+    text-decoration:None;
+}
+
+.custom_image{
+    width:100px;
+    height:100px;
+}
+
+my_custom.icon{
+    text-decoration:None;
+    color:#868e96 !important;
+}
+
+my_custom_botton{
+    margin-top:5px;
+}

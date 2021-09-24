@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div class='bold-line'></div>
+<div class='container'>
+  <div class='window'>
+    <div class='overlay'></div>
+    <div class='content'>
+      <div class='welcome'>Hello There!</div>
+      <div class='subtitle'>Create an account if you are new here.</div>
+        <div class='subtitle'>
+            {% for message in messages %}
+            {{message}}
+            {% endfor %}
+        </div>
+        <form method="post">
+            {% csrf_token %}
+      <div class='input-fields'>
+          <input type='text' placeholder='Name' class='input-line full-width' name="first_name">
+          <input type='text' placeholder='Username' class='input-line full-width' name="username">
+          <input type='email' placeholder='Email ID' class='input-line full-width' name="email">
+        <input type='password' placeholder='Password' class='input-line full-width' name="password1">
+        <input type='password' placeholder='Confirm Password' class='input-line full-width' name="password2">
+
+      </div>
+            <div><input type="submit" class='ghost-round full-width' value="Register"></div>
+            </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
